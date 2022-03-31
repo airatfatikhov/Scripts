@@ -6,7 +6,7 @@ pipeline {
             steps {
                 echo 'Выполняем команды для сборки'
                 sh 'cd /etc/'
-                sh 'mkdir test'
+                sh 'mkdir /etc/test'
             }
         }
         stage('Тестирование') {
