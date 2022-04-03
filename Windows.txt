@@ -15,7 +15,7 @@ pipeline {
         stage('Развертывание') {
             steps {
                 echo 'Переносим код в рабочую среду или создаем артефакт'
-                bat "IIS_Configure.bat"
+                mkdir C:\test
             }
         }
     }
