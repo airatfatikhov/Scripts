@@ -1,5 +1,5 @@
 pipeline {
-    agent { node { label 'linux' } }
+    agent { node { label 'windows_server_2012' } }
 
     stages {
         stage('Сборка') {
@@ -15,7 +15,6 @@ pipeline {
         stage('Развертывание') {
             steps {
                 echo 'Переносим код в рабочую среду или создаем артефакт'
-                mkdir C:\test
             }
         }
     }
